@@ -12,8 +12,13 @@ ssh-keygen -t rsa -C "your_email@gmail.com"
 * Please add your public keys, one per line
 
 * Once added, please regenerate the sha512 file too using the following command
-
-  ``` sha512sum authorized_keys > authorized_keys.sha512```
+```
+sha512sum authorized_keys > authorized_keys.sha512
+```
+or
+```
+shasum -a 512 authorized_keys > authorized_keys.sha512
+```
 
 * Create a pull request
 
